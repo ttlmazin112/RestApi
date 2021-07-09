@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="arotec.rws.mapper.mapper">
+<!-- DAO의 메서드가 될 것이다. -->
+
+<select id="MultiLineString" resultType="hashMap">
+select sngid, _geometry from test_pipe 
+</select>
+
+<select id="MultiPolygon" resultType="hashMap">
+select gid, _geometry from te_srvrsv
+</select>
+
+<select id="Point" resultType="arotec.rws.vo.PointVO">
+select sngid, _geometry from te_dvlv
+</select>
+
+
+</mapper>

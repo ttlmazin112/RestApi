@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="arotec.rws.mapper.adminPgMapper">
+<!-- DAO의 메서드가 될 것이다. -->
+
+<select id="getAllPgSelect" resultType="hashMap">
+
+SELECT TABLE_NAME as Table_name FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'public' ORDER BY TABLE_NAME ASC;
+
+</select>
+
+
+
+</mapper>
